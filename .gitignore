@@ -1,0 +1,15 @@
+.env
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+dist/
+ecosystem.config.js
+uploads/
+migration/
+public/
+logs/
+package-lock.json
+
