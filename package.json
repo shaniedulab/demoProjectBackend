@@ -10,7 +10,8 @@
     "lint:fix": "eslint . --fix",
     "migration:generate": "npx ts-node ./node_modules/typeorm/cli.js --dataSource ./src/config/data-source.ts migration:generate ./src/migration/tables",
     "migration:run": "npx ts-node ./node_modules/typeorm/cli.js --dataSource ./src/config/data-source.ts migration:run",
-    "migration:revert": "npx ts-node ./node_modules/typeorm/cli.js --dataSource ./src/config/data-source.ts migration:revert"
+    "migration:revert": "npx ts-node ./node_modules/typeorm/cli.js --dataSource ./src/config/data-source.ts migration:revert",
+    "prepare": "husky"
   },
   "author": "Shani Maurya",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.56.0",
+    "husky": "^9.0.11",
     "nodemon": "^3.0.3",
     "ts-node": "^10.9.2"
   },

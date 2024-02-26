@@ -3,7 +3,8 @@ import UserRepository from "../user/user.service";
 import ApiError from '../../api-errors/api-error.util';
 import { customResponse } from '../../api-errors/api-error.controller';
 import { hash } from '../../utils/auth.util';
-import { passwordSchema, updateUserSchema } from '../auth/auth.validator';
+import { passwordSchema } from '../auth/auth.validator';
+import { updateUserSchema } from './user.validator';
 
 export default class UserController {
 
